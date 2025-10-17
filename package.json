@@ -24,6 +24,9 @@
     "bmad-method": "tools/bmad-npx-wrapper.js"
   },
   "scripts": {
+    "bmad:list": "bmad-method list:agents",
+    "bmad:refresh": "bmad-method install -f -i codex",
+    "bmad:validate": "bmad-method validate",
     "build": "node tools/cli.js build",
     "build:agents": "node tools/cli.js build --agents-only",
     "build:teams": "node tools/cli.js build --teams-only",
